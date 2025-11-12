@@ -80,6 +80,5 @@ ref = quotesinglbase;
 width = 390;
 }
 );
-metricRight = "=quotesinglbase";
 unicode = 8222;
 }

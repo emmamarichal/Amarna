@@ -34,7 +34,7 @@ shapes = (
 ref = k;
 },
 {
-pos = (120,10);
+pos = (100,10);
 ref = commaaccentcomb;
 }
 );

@@ -21,7 +21,7 @@ shapes = (
 ref = W;
 },
 {
-pos = (324,200);
+pos = (284,200);
 ref = gravecomb;
 }
 );
@@ -47,7 +47,7 @@ shapes = (
 ref = W;
 },
 {
-pos = (324,200);
+pos = (284,200);
 ref = gravecomb;
 }
 );
@@ -73,7 +73,7 @@ shapes = (
 ref = W;
 },
 {
-pos = (354,200);
+pos = (314,200);
 ref = gravecomb;
 }
 );

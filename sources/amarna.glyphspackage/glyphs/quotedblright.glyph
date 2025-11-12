@@ -15,11 +15,11 @@ width = 390;
 layerId = m003;
 shapes = (
 {
-pos = (9,641);
+pos = (60,641);
 ref = quotedblbase;
 }
 );
-width = 332;
+width = 360;
 },
 {
 layerId = m006;
@@ -35,11 +35,11 @@ width = 330;
 layerId = m007;
 shapes = (
 {
-pos = (-20,641);
+pos = (40,641);
 ref = quotedblbase;
 }
 );
-width = 330;
+width = 300;
 },
 {
 layerId = m008;
@@ -55,11 +55,11 @@ width = 390;
 layerId = m009;
 shapes = (
 {
-pos = (0,641);
+pos = (60,641);
 ref = quotedblbase;
 }
 );
-width = 390;
+width = 360;
 }
 );
 unicode = 8221;

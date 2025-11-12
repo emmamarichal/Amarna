@@ -33,17 +33,17 @@ width = 374;
 anchors = (
 {
 name = _top;
-pos = (223,500);
+pos = (213,500);
 },
 {
 name = top;
-pos = (269,825);
+pos = (255,795);
 }
 );
 background = {
 shapes = (
 {
-pos = (94,0);
+pos = (80,0);
 ref = dieresiscomb;
 }
 );
@@ -51,11 +51,11 @@ ref = dieresiscomb;
 layerId = m003;
 shapes = (
 {
-pos = (94,110);
+pos = (80,80);
 ref = degree;
 }
 );
-width = 375;
+width = 356;
 },
 {
 anchors = (

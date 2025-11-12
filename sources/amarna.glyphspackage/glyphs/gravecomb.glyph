@@ -33,11 +33,11 @@ width = 320;
 anchors = (
 {
 name = _top;
-pos = (215,500);
+pos = (255,500);
 },
 {
 name = top;
-pos = (291,750);
+pos = (331,750);
 }
 );
 background = {
@@ -90,11 +90,11 @@ width = 320;
 anchors = (
 {
 name = _top;
-pos = (201,500);
+pos = (241,500);
 },
 {
 name = top;
-pos = (236,750);
+pos = (276,750);
 }
 );
 background = {
@@ -146,11 +146,11 @@ width = 320;
 anchors = (
 {
 name = _top;
-pos = (215,500);
+pos = (255,500);
 },
 {
 name = top;
-pos = (250,750);
+pos = (290,750);
 }
 );
 background = {

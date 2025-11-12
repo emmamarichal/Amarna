@@ -17,11 +17,11 @@ layerId = m003;
 shapes = (
 {
 angle = 180;
-pos = (427,599);
+pos = (404,599);
 ref = quotedblbase;
 }
 );
-width = 332;
+width = 360;
 },
 {
 layerId = m006;
@@ -39,11 +39,11 @@ layerId = m007;
 shapes = (
 {
 angle = 180;
-pos = (350,599);
+pos = (364,599);
 ref = quotedblbase;
 }
 );
-width = 330;
+width = 300;
 },
 {
 layerId = m008;
@@ -61,11 +61,11 @@ layerId = m009;
 shapes = (
 {
 angle = 180;
-pos = (390,599);
+pos = (404,599);
 ref = quotedblbase;
 }
 );
-width = 390;
+width = 360;
 }
 );
 unicode = 8220;
