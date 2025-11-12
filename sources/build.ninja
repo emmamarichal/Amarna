@@ -1,0 +1,557 @@
+# buildVariable: Build a variable font from a source file
+rule buildVariable
+  command = /opt/homebrew/opt/python@3.11/bin/python3.11 -m $
+      gftools.builder.jobrunner fontmake --output-path $out -o variable $
+      $fontmake_type $in $args $stamp
+  description = buildVariable
+
+# subspace: Run varLib.instancer to subspace a variable font
+rule subspace
+  command = /opt/homebrew/opt/python@3.11/bin/python3.11 -m $
+      gftools.builder.jobrunner fonttools varLib.instancer $args -o $out $
+      $in $axes $stamp
+  description = subspace
+
+# fix: Run gftools-fix
+rule fix
+  command = /opt/homebrew/opt/python@3.11/bin/python3.11 -m $
+      gftools.builder.jobrunner gftools-fix-font -o $out $args $in $stamp
+  description = fix
+
+# exec: Run an arbitrary executable
+rule exec
+  command = /opt/homebrew/opt/python@3.11/bin/python3.11 -m $
+      gftools.builder.jobrunner $exe $args $stamp
+  description = exec
+
+# compress: Compress to webfont
+rule compress
+  command = /opt/homebrew/opt/python@3.11/bin/python3.11 -m $
+      gftools.builder.jobrunner fonttools ttLib.woff2 compress -o $out $in $
+      $stamp
+  description = compress
+
+# buildStat: Build a STAT table from one or more source files
+rule buildSTAT-operation
+  command = gftools-gen-stat --out $tempdir $args -- $in && mv $finalfile $
+      $out $stamp
+rule buildSTAT-postprocess
+  command = gftools-gen-stat --inplace $args -- $in $stamp
+
+# instantiateUfo: Create instance UFOs from a Glyphs or designspace file
+rule instantiateUfo
+  command = /opt/homebrew/opt/python@3.11/bin/python3.11 -m $
+      gftools.builder.jobrunner fontmake -i "$instance_name" -o ufo $
+      $fontmake_type $in $args $stamp
+  description = instantiateUfo
+
+# buildTTF: Build a TTF from a source file
+rule buildTTF
+  command = /opt/homebrew/opt/python@3.11/bin/python3.11 -m $
+      gftools.builder.jobrunner fontmake --output-path $out -o ttf $
+      $fontmake_type $in $args $stamp
+  description = buildTTF
+
+# autohint: Run gftools-autohint
+rule autohint
+  command = /opt/homebrew/opt/python@3.11/bin/python3.11 -m $
+      gftools.builder.jobrunner gftools-autohint $args -o $out $in $stamp
+  description = autohint
+
+# copy: Copy a file
+rule copy
+  command = /opt/homebrew/opt/python@3.11/bin/python3.11 -m $
+      gftools.builder.jobrunner cp $in $out $stamp
+  description = copy
+
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpg47v5q47
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpg47v5q47: $
+    buildVariable Amarna.glyphspackage
+  operation = buildVariable
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+# Generating instance_ufos/Amarna-Regular.ufo.json
+build instance_ufos/Amarna-Regular.ufo.json: instantiateUfo $
+    Amarna.glyphspackage
+  operation = instantiateUfo
+  instance_name = Amarna Regular
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/Amarna-RegularItalic.ufo.json
+build instance_ufos/Amarna-RegularItalic.ufo.json: instantiateUfo $
+    Amarna.glyphspackage
+  operation = instantiateUfo
+  instance_name = Amarna Regular Italic
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/Amarna-Medium.ufo.json
+build instance_ufos/Amarna-Medium.ufo.json: instantiateUfo $
+    Amarna.glyphspackage
+  operation = instantiateUfo
+  instance_name = Amarna Medium
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/Amarna-MediumItalic.ufo.json
+build instance_ufos/Amarna-MediumItalic.ufo.json: instantiateUfo $
+    Amarna.glyphspackage
+  operation = instantiateUfo
+  instance_name = Amarna Medium Italic
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/Amarna-Semibold.ufo.json
+build instance_ufos/Amarna-Semibold.ufo.json: instantiateUfo $
+    Amarna.glyphspackage
+  operation = instantiateUfo
+  instance_name = Amarna Semibold
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/Amarna-SemiboldItalic.ufo.json
+build instance_ufos/Amarna-SemiboldItalic.ufo.json: instantiateUfo $
+    Amarna.glyphspackage
+  operation = instantiateUfo
+  instance_name = Amarna Semibold Italic
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/Amarna-Bold.ufo.json
+build instance_ufos/Amarna-Bold.ufo.json: instantiateUfo Amarna.glyphspackage
+  operation = instantiateUfo
+  instance_name = Amarna Bold
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/Amarna-BoldItalic.ufo.json
+build instance_ufos/Amarna-BoldItalic.ufo.json: instantiateUfo $
+    Amarna.glyphspackage
+  operation = instantiateUfo
+  instance_name = Amarna Bold Italic
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/Amarna-Hairline.ufo.json
+build instance_ufos/Amarna-Hairline.ufo.json: instantiateUfo $
+    Amarna.glyphspackage
+  operation = instantiateUfo
+  instance_name = Amarna Hairline
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/Amarna-HairlineItalic.ufo.json
+build instance_ufos/Amarna-HairlineItalic.ufo.json: instantiateUfo $
+    Amarna.glyphspackage
+  operation = instantiateUfo
+  instance_name = Amarna Hairline Italic
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/Amarna-Thin.ufo.json
+build instance_ufos/Amarna-Thin.ufo.json: instantiateUfo Amarna.glyphspackage
+  operation = instantiateUfo
+  instance_name = Amarna Thin
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/Amarna-ThinItalic.ufo.json
+build instance_ufos/Amarna-ThinItalic.ufo.json: instantiateUfo $
+    Amarna.glyphspackage
+  operation = instantiateUfo
+  instance_name = Amarna Thin Italic
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/Amarna-Light.ufo.json
+build instance_ufos/Amarna-Light.ufo.json: instantiateUfo Amarna.glyphspackage
+  operation = instantiateUfo
+  instance_name = Amarna Light
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/Amarna-LightItalic.ufo.json
+build instance_ufos/Amarna-LightItalic.ufo.json: instantiateUfo $
+    Amarna.glyphspackage
+  operation = instantiateUfo
+  instance_name = Amarna Light Italic
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Postprocessing  with BuildSTAT
+build $
+    /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp6jh8p85h.buildStatstamp: $
+    buildSTAT-postprocess ../fonts/variable/Amarna[wght].ttf | $
+    ../fonts/variable/Amarna-Italic[wght].ttf
+  stamp =  && touch $
+      /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp6jh8p85h.buildStatstamp
+  postprocess = buildStat
+  args = --src /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpf4_75rpz
+# Generating ../fonts/webfonts/Amarna-Regular.woff2
+build ../fonts/webfonts/Amarna-Regular.woff2: compress $
+    ../fonts/ttf/Amarna-Regular.ttf
+  operation = compress
+# Generating ../fonts/webfonts/Amarna-RegularItalic.woff2
+build ../fonts/webfonts/Amarna-RegularItalic.woff2: compress $
+    ../fonts/ttf/Amarna-RegularItalic.ttf
+  operation = compress
+# Generating ../fonts/webfonts/Amarna-Medium.woff2
+build ../fonts/webfonts/Amarna-Medium.woff2: compress $
+    ../fonts/ttf/Amarna-Medium.ttf
+  operation = compress
+# Generating ../fonts/webfonts/Amarna-MediumItalic.woff2
+build ../fonts/webfonts/Amarna-MediumItalic.woff2: compress $
+    ../fonts/ttf/Amarna-MediumItalic.ttf
+  operation = compress
+# Generating ../fonts/webfonts/Amarna-Semibold.woff2
+build ../fonts/webfonts/Amarna-Semibold.woff2: compress $
+    ../fonts/ttf/Amarna-Semibold.ttf
+  operation = compress
+# Generating ../fonts/webfonts/Amarna-SemiboldItalic.woff2
+build ../fonts/webfonts/Amarna-SemiboldItalic.woff2: compress $
+    ../fonts/ttf/Amarna-SemiboldItalic.ttf
+  operation = compress
+# Generating ../fonts/webfonts/Amarna-Bold.woff2
+build ../fonts/webfonts/Amarna-Bold.woff2: compress $
+    ../fonts/ttf/Amarna-Bold.ttf
+  operation = compress
+# Generating ../fonts/webfonts/Amarna-BoldItalic.woff2
+build ../fonts/webfonts/Amarna-BoldItalic.woff2: compress $
+    ../fonts/ttf/Amarna-BoldItalic.ttf
+  operation = compress
+# Generating ../fonts/webfonts/Amarna-Hairline.woff2
+build ../fonts/webfonts/Amarna-Hairline.woff2: compress $
+    ../fonts/ttf/Amarna-Hairline.ttf
+  operation = compress
+# Generating ../fonts/webfonts/Amarna-HairlineItalic.woff2
+build ../fonts/webfonts/Amarna-HairlineItalic.woff2: compress $
+    ../fonts/ttf/Amarna-HairlineItalic.ttf
+  operation = compress
+# Generating ../fonts/webfonts/Amarna-Thin.woff2
+build ../fonts/webfonts/Amarna-Thin.woff2: compress $
+    ../fonts/ttf/Amarna-Thin.ttf
+  operation = compress
+# Generating ../fonts/webfonts/Amarna-ThinItalic.woff2
+build ../fonts/webfonts/Amarna-ThinItalic.woff2: compress $
+    ../fonts/ttf/Amarna-ThinItalic.ttf
+  operation = compress
+# Generating ../fonts/webfonts/Amarna-Light.woff2
+build ../fonts/webfonts/Amarna-Light.woff2: compress $
+    ../fonts/ttf/Amarna-Light.ttf
+  operation = compress
+# Generating ../fonts/webfonts/Amarna-LightItalic.woff2
+build ../fonts/webfonts/Amarna-LightItalic.woff2: compress $
+    ../fonts/ttf/Amarna-LightItalic.ttf
+  operation = compress
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpmx02_l1p
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpmx02_l1p: $
+    subspace /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpg47v5q47
+  operation = subspace
+  axes = ital=0
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp_oxbe2mx
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp_oxbe2mx: $
+    subspace /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpg47v5q47
+  operation = subspace
+  axes = ital=1
+# Generating ../fonts/variable/Amarna[wght].ttf
+build ../fonts/variable/Amarna[wght].ttf: fix $
+    /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpmx02_l1p
+  operation = fix
+  args = 
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp7wu2agqs
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp7wu2agqs: exec $
+    /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp_oxbe2mx
+  exe = gftools-fontsetter
+  args = -o /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp7wu2agqs $
+      /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp_oxbe2mx $
+      /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpr54oc9ss
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp17sk6540
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp17sk6540: fix $
+    /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp7wu2agqs
+  operation = fix
+  args = --include-source-fixes
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmppcvpzih2
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmppcvpzih2: fix $
+    /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp17sk6540
+  operation = fix
+  args = 
+# Generating ../fonts/webfonts/Amarna[ital,wght].woff2
+build ../fonts/webfonts/Amarna[ital,wght].woff2: compress $
+    /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmppcvpzih2
+  operation = compress
+# Generating ../fonts/variable/Amarna-Italic[wght].ttf
+build ../fonts/variable/Amarna-Italic[wght].ttf: copy $
+    /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmppcvpzih2
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp1dk2i131
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp1dk2i131: $
+    buildTTF instance_ufos/Amarna-Regular.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp_abmxwdr
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp_abmxwdr: $
+    autohint /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp1dk2i131
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/Amarna-Regular.ttf
+build ../fonts/ttf/Amarna-Regular.ttf: fix $
+    /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp_abmxwdr
+  operation = fix
+  args = 
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpycvjyuoi
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpycvjyuoi: $
+    buildTTF instance_ufos/Amarna-RegularItalic.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmptnux4y75
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmptnux4y75: $
+    autohint /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpycvjyuoi
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/Amarna-RegularItalic.ttf
+build ../fonts/ttf/Amarna-RegularItalic.ttf: fix $
+    /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmptnux4y75
+  operation = fix
+  args = 
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp886qvpuh
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp886qvpuh: $
+    buildTTF instance_ufos/Amarna-Medium.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpo4dsif8y
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpo4dsif8y: $
+    autohint /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp886qvpuh
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/Amarna-Medium.ttf
+build ../fonts/ttf/Amarna-Medium.ttf: fix $
+    /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpo4dsif8y
+  operation = fix
+  args = 
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmplvl03c1f
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmplvl03c1f: $
+    buildTTF instance_ufos/Amarna-MediumItalic.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpdprcram6
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpdprcram6: $
+    autohint /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmplvl03c1f
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/Amarna-MediumItalic.ttf
+build ../fonts/ttf/Amarna-MediumItalic.ttf: fix $
+    /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpdprcram6
+  operation = fix
+  args = 
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp4mj_bwzc
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp4mj_bwzc: $
+    buildTTF instance_ufos/Amarna-Semibold.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp11tf18xr
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp11tf18xr: $
+    autohint /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp4mj_bwzc
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/Amarna-Semibold.ttf
+build ../fonts/ttf/Amarna-Semibold.ttf: fix $
+    /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp11tf18xr
+  operation = fix
+  args = 
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpq39oz1gz
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpq39oz1gz: $
+    buildTTF instance_ufos/Amarna-SemiboldItalic.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpl_fvytj5
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpl_fvytj5: $
+    autohint /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpq39oz1gz
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/Amarna-SemiboldItalic.ttf
+build ../fonts/ttf/Amarna-SemiboldItalic.ttf: fix $
+    /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpl_fvytj5
+  operation = fix
+  args = 
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpbp4jdkfq
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpbp4jdkfq: $
+    buildTTF instance_ufos/Amarna-Bold.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp0r34a0lc
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp0r34a0lc: $
+    autohint /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpbp4jdkfq
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/Amarna-Bold.ttf
+build ../fonts/ttf/Amarna-Bold.ttf: fix $
+    /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp0r34a0lc
+  operation = fix
+  args = 
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpxwbg_9sb
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpxwbg_9sb: $
+    buildTTF instance_ufos/Amarna-BoldItalic.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpsimsha6w
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpsimsha6w: $
+    autohint /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpxwbg_9sb
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/Amarna-BoldItalic.ttf
+build ../fonts/ttf/Amarna-BoldItalic.ttf: fix $
+    /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpsimsha6w
+  operation = fix
+  args = 
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpa9q86c4k
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpa9q86c4k: $
+    buildTTF instance_ufos/Amarna-Hairline.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpcfi8zjfu
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpcfi8zjfu: $
+    autohint /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpa9q86c4k
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/Amarna-Hairline.ttf
+build ../fonts/ttf/Amarna-Hairline.ttf: fix $
+    /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpcfi8zjfu
+  operation = fix
+  args = 
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp7e7ihozc
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp7e7ihozc: $
+    buildTTF instance_ufos/Amarna-HairlineItalic.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp53hkpea3
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp53hkpea3: $
+    autohint /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp7e7ihozc
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/Amarna-HairlineItalic.ttf
+build ../fonts/ttf/Amarna-HairlineItalic.ttf: fix $
+    /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp53hkpea3
+  operation = fix
+  args = 
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpeaoe30qz
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpeaoe30qz: $
+    buildTTF instance_ufos/Amarna-Thin.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmplbc6f64u
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmplbc6f64u: $
+    autohint /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpeaoe30qz
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/Amarna-Thin.ttf
+build ../fonts/ttf/Amarna-Thin.ttf: fix $
+    /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmplbc6f64u
+  operation = fix
+  args = 
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpxjoui5ir
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpxjoui5ir: $
+    buildTTF instance_ufos/Amarna-ThinItalic.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp3_v44ewp
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp3_v44ewp: $
+    autohint /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpxjoui5ir
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/Amarna-ThinItalic.ttf
+build ../fonts/ttf/Amarna-ThinItalic.ttf: fix $
+    /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp3_v44ewp
+  operation = fix
+  args = 
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp4tv26va0
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp4tv26va0: $
+    buildTTF instance_ufos/Amarna-Light.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpjeepfmj5
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpjeepfmj5: $
+    autohint /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp4tv26va0
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/Amarna-Light.ttf
+build ../fonts/ttf/Amarna-Light.ttf: fix $
+    /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpjeepfmj5
+  operation = fix
+  args = 
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpjol2z8p1
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpjol2z8p1: $
+    buildTTF instance_ufos/Amarna-LightItalic.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp_jz3p2bn
+build /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp_jz3p2bn: $
+    autohint /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmpjol2z8p1
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/Amarna-LightItalic.ttf
+build ../fonts/ttf/Amarna-LightItalic.ttf: fix $
+    /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp_jz3p2bn
+  operation = fix
+  args = 
+default $
+    /var/folders/gq/g2r9xykn4dd7hy3_gdvvc69r0000gn/T/tmp6jh8p85h.buildStatstamp $
+    ../fonts/webfonts/Amarna-Regular.woff2 $
+    ../fonts/webfonts/Amarna-RegularItalic.woff2 $
+    ../fonts/webfonts/Amarna-Medium.woff2 $
+    ../fonts/webfonts/Amarna-MediumItalic.woff2 $
+    ../fonts/webfonts/Amarna-Semibold.woff2 $
+    ../fonts/webfonts/Amarna-SemiboldItalic.woff2 $
+    ../fonts/webfonts/Amarna-Bold.woff2 $
+    ../fonts/webfonts/Amarna-BoldItalic.woff2 $
+    ../fonts/webfonts/Amarna-Hairline.woff2 $
+    ../fonts/webfonts/Amarna-HairlineItalic.woff2 $
+    ../fonts/webfonts/Amarna-Thin.woff2 $
+    ../fonts/webfonts/Amarna-ThinItalic.woff2 $
+    ../fonts/webfonts/Amarna-Light.woff2 $
+    ../fonts/webfonts/Amarna-LightItalic.woff2 $
+    ../fonts/variable/Amarna[wght].ttf $
+    ../fonts/webfonts/Amarna[ital,wght].woff2
