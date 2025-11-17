@@ -1,5 +1,7 @@
 {
 glyphname = Uhungarumlaut;
+kernLeft = U;
+kernRight = U;
 layers = (
 {
 layerId = m002;
@@ -21,11 +23,11 @@ shapes = (
 ref = U;
 },
 {
-pos = (222,160);
+pos = (242,160);
 ref = hungarumlautcomb;
 }
 );
-width = 697;
+width = 737;
 },
 {
 layerId = m006;

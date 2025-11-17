@@ -1,5 +1,7 @@
 {
 glyphname = uring;
+kernLeft = u;
+kernRight = i;
 layers = (
 {
 layerId = m002;
@@ -21,11 +23,11 @@ shapes = (
 ref = u;
 },
 {
-pos = (82,-10);
+pos = (92,-10);
 ref = ringcomb;
 }
 );
-width = 530;
+width = 550;
 },
 {
 layerId = m006;

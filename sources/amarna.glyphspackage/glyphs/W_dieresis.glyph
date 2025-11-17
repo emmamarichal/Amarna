@@ -1,5 +1,7 @@
 {
 glyphname = Wdieresis;
+kernLeft = W;
+kernRight = W;
 layers = (
 {
 layerId = m002;
@@ -21,11 +23,11 @@ shapes = (
 ref = W;
 },
 {
-pos = (305,200);
+pos = (325,200);
 ref = dieresiscomb;
 }
 );
-width = 951;
+width = 991;
 },
 {
 layerId = m006;
@@ -73,7 +75,7 @@ shapes = (
 ref = W;
 },
 {
-pos = (339,200);
+pos = (318,200);
 ref = dieresiscomb;
 }
 );

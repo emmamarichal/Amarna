@@ -1,0 +1,85 @@
+{
+glyphname = Ugrave.ss02;
+kernLeft = U;
+kernRight = I;
+layers = (
+{
+layerId = m002;
+shapes = (
+{
+ref = U.ss02;
+},
+{
+pos = (147,150);
+ref = gravecomb;
+}
+);
+width = 734;
+},
+{
+layerId = m003;
+shapes = (
+{
+ref = U.ss02;
+},
+{
+pos = (168,150);
+ref = gravecomb;
+}
+);
+width = 739;
+},
+{
+layerId = m006;
+shapes = (
+{
+ref = U.ss02;
+},
+{
+pos = (130,150);
+ref = gravecomb;
+}
+);
+width = 699;
+},
+{
+layerId = m007;
+shapes = (
+{
+ref = U.ss02;
+},
+{
+pos = (159,150);
+ref = gravecomb;
+}
+);
+width = 698;
+},
+{
+layerId = m008;
+shapes = (
+{
+ref = U.ss02;
+},
+{
+pos = (175,150);
+ref = gravecomb;
+}
+);
+width = 750;
+},
+{
+layerId = m009;
+shapes = (
+{
+ref = U.ss02;
+},
+{
+pos = (173,150);
+ref = gravecomb;
+}
+);
+width = 750;
+}
+);
+}

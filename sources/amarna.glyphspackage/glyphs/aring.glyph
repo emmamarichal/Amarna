@@ -1,5 +1,7 @@
 {
 glyphname = aring;
+kernLeft = a;
+kernRight = n;
 layers = (
 {
 layerId = m002;
@@ -8,11 +10,11 @@ shapes = (
 ref = a;
 },
 {
-pos = (75,0);
+pos = (65,0);
 ref = ringcomb;
 }
 );
-width = 513;
+width = 503;
 },
 {
 layerId = m003;
@@ -21,11 +23,11 @@ shapes = (
 ref = a;
 },
 {
-pos = (74,0);
+pos = (84,0);
 ref = ringcomb;
 }
 );
-width = 483;
+width = 503;
 },
 {
 layerId = m006;

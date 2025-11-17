@@ -1,5 +1,7 @@
 {
 glyphname = eogonek;
+kernLeft = o;
+kernRight = e;
 layers = (
 {
 layerId = m002;
@@ -21,11 +23,11 @@ shapes = (
 ref = e;
 },
 {
-pos = (214,70);
+pos = (234,70);
 ref = ogonekcomb;
 }
 );
-width = 474;
+width = 514;
 },
 {
 layerId = m006;
@@ -73,11 +75,11 @@ shapes = (
 ref = e;
 },
 {
-pos = (229,75);
+pos = (224,75);
 ref = ogonekcomb;
 }
 );
-width = 514;
+width = 499;
 }
 );
 unicode = 281;

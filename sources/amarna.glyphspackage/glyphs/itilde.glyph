@@ -1,5 +1,7 @@
 {
 glyphname = itilde;
+kernLeft = i;
+kernRight = i;
 layers = (
 {
 layerId = m006;
@@ -47,11 +49,11 @@ shapes = (
 ref = idotless;
 },
 {
-pos = (-106,0);
+pos = (-96,0);
 ref = tildecomb;
 }
 );
-width = 240;
+width = 260;
 },
 {
 layerId = m008;

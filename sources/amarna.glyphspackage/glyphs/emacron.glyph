@@ -1,5 +1,7 @@
 {
 glyphname = emacron;
+kernLeft = o;
+kernRight = e;
 layers = (
 {
 layerId = m002;
@@ -21,11 +23,11 @@ shapes = (
 ref = e;
 },
 {
-pos = (47,0);
+pos = (67,0);
 ref = macroncomb;
 }
 );
-width = 474;
+width = 514;
 },
 {
 layerId = m006;
@@ -73,11 +75,11 @@ shapes = (
 ref = e;
 },
 {
-pos = (67,0);
+pos = (62,0);
 ref = macroncomb;
 }
 );
-width = 514;
+width = 499;
 }
 );
 unicode = 275;

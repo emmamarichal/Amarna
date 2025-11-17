@@ -1,16 +1,18 @@
 {
 glyphname = quoteright;
+kernLeft = quoteright;
+kernRight = quoteright;
 layers = (
 {
 layerId = m002;
 shapes = (
 {
 angle = 180;
-pos = (230,1240);
+pos = (200,1240);
 ref = quoteleft;
 }
 );
-width = 230;
+width = 200;
 },
 {
 layerId = m003;
@@ -21,18 +23,18 @@ pos = (304,1240);
 ref = quoteleft;
 }
 );
-width = 200;
+width = 160;
 },
 {
 layerId = m006;
 shapes = (
 {
 angle = 180;
-pos = (210,1240);
+pos = (180,1240);
 ref = quoteleft;
 }
 );
-width = 210;
+width = 180;
 },
 {
 layerId = m007;
@@ -43,18 +45,18 @@ pos = (284,1240);
 ref = quoteleft;
 }
 );
-width = 180;
+width = 140;
 },
 {
 layerId = m008;
 shapes = (
 {
 angle = 180;
-pos = (230,1240);
+pos = (200,1240);
 ref = quoteleft;
 }
 );
-width = 230;
+width = 160;
 },
 {
 layerId = m009;
@@ -65,7 +67,7 @@ pos = (304,1240);
 ref = quoteleft;
 }
 );
-width = 200;
+width = 160;
 }
 );
 unicode = 8217;

@@ -1,5 +1,7 @@
 {
 glyphname = oe;
+kernLeft = o;
+kernRight = e;
 layers = (
 {
 anchors = (
@@ -19,21 +21,21 @@ alignment = -1;
 ref = o;
 },
 {
-pos = (381,0);
+pos = (371,0);
 ref = e;
 }
 );
-width = 895;
+width = 885;
 },
 {
 anchors = (
 {
 name = bottom;
-pos = (428,0);
+pos = (438,0);
 },
 {
 name = top;
-pos = (428,500);
+pos = (438,500);
 }
 );
 layerId = m003;
@@ -43,11 +45,11 @@ alignment = -1;
 ref = o;
 },
 {
-pos = (381,0);
+pos = (371,0);
 ref = e;
 }
 );
-width = 855;
+width = 885;
 },
 {
 anchors = (
@@ -67,11 +69,11 @@ alignment = -1;
 ref = o;
 },
 {
-pos = (431,0);
+pos = (411,0);
 ref = e;
 }
 );
-width = 938;
+width = 918;
 },
 {
 anchors = (
@@ -115,11 +117,11 @@ alignment = -1;
 ref = o;
 },
 {
-pos = (361,0);
+pos = (356,0);
 ref = e;
 }
 );
-width = 875;
+width = 870;
 },
 {
 anchors = (
@@ -143,7 +145,7 @@ pos = (351,0);
 ref = e;
 }
 );
-width = 865;
+width = 850;
 }
 );
 metricLeft = "=o";

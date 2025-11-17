@@ -1,5 +1,7 @@
 {
 glyphname = Wacute;
+kernLeft = W;
+kernRight = W;
 layers = (
 {
 layerId = m002;
@@ -21,11 +23,11 @@ shapes = (
 ref = W;
 },
 {
-pos = (399,200);
+pos = (419,200);
 ref = acutecomb;
 }
 );
-width = 951;
+width = 991;
 },
 {
 layerId = m006;

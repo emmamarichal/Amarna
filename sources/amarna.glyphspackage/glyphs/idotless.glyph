@@ -1,5 +1,7 @@
 {
 glyphname = idotless;
+kernLeft = i;
+kernRight = i;
 layers = (
 {
 anchors = (
@@ -36,15 +38,15 @@ width = 265;
 anchors = (
 {
 name = bottom;
-pos = (85,0);
+pos = (95,0);
 },
 {
 name = ogonek;
-pos = (145,0);
+pos = (155,0);
 },
 {
 name = top;
-pos = (155,500);
+pos = (165,500);
 }
 );
 layerId = m003;
@@ -52,16 +54,16 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(145,0,l),
-(165,250,l),
-(202,510,l),
-(109,490,l),
-(90,250,l),
-(50,0,l)
+(155,0,l),
+(175,250,l),
+(212,510,l),
+(119,490,l),
+(100,250,l),
+(60,0,l)
 );
 }
 );
-width = 240;
+width = 260;
 },
 {
 anchors = (

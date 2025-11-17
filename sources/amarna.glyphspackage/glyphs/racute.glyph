@@ -1,5 +1,7 @@
 {
 glyphname = racute;
+kernLeft = i;
+kernRight = r;
 layers = (
 {
 layerId = m002;
@@ -21,11 +23,11 @@ shapes = (
 ref = r;
 },
 {
-pos = (101,-10);
+pos = (111,-10);
 ref = acutecomb;
 }
 );
-width = 335;
+width = 355;
 },
 {
 layerId = m006;

@@ -1,5 +1,7 @@
 {
 glyphname = I;
+kernLeft = I;
+kernRight = I;
 layers = (
 {
 anchors = (
@@ -73,19 +75,19 @@ width = 250;
 anchors = (
 {
 name = bottom;
-pos = (75,0);
+pos = (95,0);
 },
 {
 name = ogonek;
-pos = (120,0);
+pos = (140,0);
 },
 {
 name = top;
-pos = (173,700);
+pos = (193,700);
 },
 {
 name = topleft;
-pos = (83,700);
+pos = (103,700);
 }
 );
 background = {
@@ -126,16 +128,16 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(105,500,l),
-(30,0,l),
-(120,0,l),
-(150,250,l),
-(218,700,l),
-(128,700,l)
+(125,500,l),
+(50,0,l),
+(140,0,l),
+(170,250,l),
+(238,700,l),
+(148,700,l)
 );
 }
 );
-width = 220;
+width = 260;
 },
 {
 anchors = (

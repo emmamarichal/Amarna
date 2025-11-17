@@ -1,5 +1,7 @@
 {
 glyphname = Cdotaccent;
+kernLeft = O;
+kernRight = C;
 layers = (
 {
 layerId = m002;
@@ -21,11 +23,11 @@ shapes = (
 ref = C;
 },
 {
-pos = (314,200);
+pos = (334,200);
 ref = dotaccentcomb;
 }
 );
-width = 683;
+width = 703;
 },
 {
 layerId = m006;

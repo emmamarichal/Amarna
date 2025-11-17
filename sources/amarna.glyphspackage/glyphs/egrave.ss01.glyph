@@ -1,0 +1,85 @@
+{
+glyphname = egrave.ss01;
+kernLeft = o;
+kernRight = c;
+layers = (
+{
+layerId = m002;
+shapes = (
+{
+ref = e.ss01;
+},
+{
+pos = (43,-10);
+ref = gravecomb;
+}
+);
+width = 474;
+},
+{
+layerId = m003;
+shapes = (
+{
+ref = e.ss01;
+},
+{
+pos = (56,0);
+ref = gravecomb;
+}
+);
+width = 452;
+},
+{
+layerId = m006;
+shapes = (
+{
+ref = e.ss01;
+},
+{
+pos = (43,-10);
+ref = gravecomb;
+}
+);
+width = 471;
+},
+{
+layerId = m007;
+shapes = (
+{
+ref = e.ss01;
+},
+{
+pos = (25,-10);
+ref = gravecomb;
+}
+);
+width = 432;
+},
+{
+layerId = m008;
+shapes = (
+{
+ref = e.ss01;
+},
+{
+pos = (63,-10);
+ref = gravecomb;
+}
+);
+width = 474;
+},
+{
+layerId = m009;
+shapes = (
+{
+ref = e.ss01;
+},
+{
+pos = (58,-10);
+ref = gravecomb;
+}
+);
+width = 474;
+}
+);
+}

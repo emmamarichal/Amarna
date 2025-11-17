@@ -1,5 +1,7 @@
 {
 glyphname = Lacute;
+kernLeft = I;
+kernRight = L;
 layers = (
 {
 layerId = m002;
@@ -21,11 +23,11 @@ shapes = (
 ref = L;
 },
 {
-pos = (78,200);
+pos = (98,200);
 ref = acutecomb;
 }
 );
-width = 540;
+width = 580;
 },
 {
 layerId = m006;

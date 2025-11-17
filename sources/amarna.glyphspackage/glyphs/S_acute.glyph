@@ -1,5 +1,7 @@
 {
 glyphname = Sacute;
+kernLeft = S;
+kernRight = S;
 layers = (
 {
 layerId = m002;
@@ -21,11 +23,11 @@ shapes = (
 ref = S;
 },
 {
-pos = (235,200);
+pos = (255,200);
 ref = acutecomb;
 }
 );
-width = 543;
+width = 583;
 },
 {
 layerId = m006;

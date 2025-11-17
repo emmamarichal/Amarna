@@ -1,5 +1,7 @@
 {
 glyphname = Zacute;
+kernLeft = Z;
+kernRight = Z;
 layers = (
 {
 layerId = m002;
@@ -21,11 +23,11 @@ shapes = (
 ref = Z;
 },
 {
-pos = (217,200);
+pos = (237,200);
 ref = acutecomb;
 }
 );
-width = 587;
+width = 627;
 },
 {
 layerId = m006;

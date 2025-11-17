@@ -1,5 +1,7 @@
 {
 glyphname = Adieresis;
+kernLeft = A;
+kernRight = A;
 layers = (
 {
 layerId = m002;
@@ -21,11 +23,11 @@ shapes = (
 ref = A;
 },
 {
-pos = (152,200);
+pos = (172,200);
 ref = dieresiscomb;
 }
 );
-width = 626;
+width = 666;
 },
 {
 layerId = m006;
@@ -73,7 +75,7 @@ shapes = (
 ref = A;
 },
 {
-pos = (176,200);
+pos = (155,200);
 ref = dieresiscomb;
 }
 );

@@ -1,5 +1,7 @@
 {
 glyphname = Odieresis;
+kernLeft = O;
+kernRight = O;
 layers = (
 {
 layerId = m002;
@@ -21,11 +23,11 @@ shapes = (
 ref = O;
 },
 {
-pos = (227,200);
+pos = (247,200);
 ref = dieresiscomb;
 }
 );
-width = 795;
+width = 835;
 },
 {
 layerId = m006;
@@ -73,7 +75,7 @@ shapes = (
 ref = O;
 },
 {
-pos = (236,200);
+pos = (215,200);
 ref = dieresiscomb;
 }
 );

@@ -1,5 +1,7 @@
 {
 glyphname = Omacron;
+kernLeft = O;
+kernRight = O;
 layers = (
 {
 layerId = m006;
@@ -47,11 +49,11 @@ shapes = (
 ref = O;
 },
 {
-pos = (216,200);
+pos = (236,200);
 ref = macroncomb;
 }
 );
-width = 795;
+width = 835;
 },
 {
 layerId = m008;

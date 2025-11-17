@@ -1,5 +1,7 @@
 {
 glyphname = gbreve;
+kernLeft = o;
+kernRight = g;
 layers = (
 {
 layerId = m002;
@@ -21,11 +23,11 @@ shapes = (
 ref = g;
 },
 {
-pos = (74,0);
+pos = (84,0);
 ref = brevecomb;
 }
 );
-width = 513;
+width = 533;
 },
 {
 layerId = m006;

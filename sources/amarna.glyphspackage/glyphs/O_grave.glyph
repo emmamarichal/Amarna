@@ -1,5 +1,7 @@
 {
 glyphname = Ograve;
+kernLeft = O;
+kernRight = O;
 layers = (
 {
 layerId = m002;
@@ -21,11 +23,11 @@ shapes = (
 ref = O;
 },
 {
-pos = (206,200);
+pos = (226,200);
 ref = gravecomb;
 }
 );
-width = 795;
+width = 835;
 },
 {
 layerId = m006;

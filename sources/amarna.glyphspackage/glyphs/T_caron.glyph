@@ -1,5 +1,7 @@
 {
 glyphname = Tcaron;
+kernLeft = T;
+kernRight = T;
 layers = (
 {
 layerId = m002;
@@ -21,11 +23,11 @@ shapes = (
 ref = T;
 },
 {
-pos = (128,200);
+pos = (148,200);
 ref = caroncomb;
 }
 );
-width = 580;
+width = 620;
 },
 {
 layerId = m006;

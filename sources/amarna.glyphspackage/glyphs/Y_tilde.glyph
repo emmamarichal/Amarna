@@ -1,5 +1,7 @@
 {
 glyphname = Ytilde;
+kernLeft = Y;
+kernRight = Y;
 layers = (
 {
 layerId = m006;
@@ -8,7 +10,7 @@ shapes = (
 ref = Y;
 },
 {
-pos = (62,150);
+pos = (72,150);
 ref = tildecomb;
 }
 );
@@ -47,11 +49,11 @@ shapes = (
 ref = Y;
 },
 {
-pos = (90,150);
+pos = (110,150);
 ref = tildecomb;
 }
 );
-width = 596;
+width = 636;
 },
 {
 layerId = m008;

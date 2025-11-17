@@ -1,0 +1,85 @@
+{
+glyphname = Umacron.ss02;
+kernLeft = U;
+kernRight = I;
+layers = (
+{
+layerId = m002;
+shapes = (
+{
+ref = U.ss02;
+},
+{
+pos = (167,150);
+ref = macroncomb;
+}
+);
+width = 734;
+},
+{
+layerId = m003;
+shapes = (
+{
+ref = U.ss02;
+},
+{
+pos = (178,150);
+ref = macroncomb;
+}
+);
+width = 739;
+},
+{
+layerId = m006;
+shapes = (
+{
+ref = U.ss02;
+},
+{
+pos = (150,150);
+ref = macroncomb;
+}
+);
+width = 699;
+},
+{
+layerId = m007;
+shapes = (
+{
+ref = U.ss02;
+},
+{
+pos = (179,150);
+ref = macroncomb;
+}
+);
+width = 698;
+},
+{
+layerId = m008;
+shapes = (
+{
+ref = U.ss02;
+},
+{
+pos = (175,150);
+ref = macroncomb;
+}
+);
+width = 750;
+},
+{
+layerId = m009;
+shapes = (
+{
+ref = U.ss02;
+},
+{
+pos = (193,150);
+ref = macroncomb;
+}
+);
+width = 750;
+}
+);
+}

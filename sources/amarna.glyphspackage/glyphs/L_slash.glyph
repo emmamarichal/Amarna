@@ -1,5 +1,7 @@
 {
 glyphname = Lslash;
+kernLeft = I;
+kernRight = L;
 layers = (
 {
 layerId = m002;
@@ -17,7 +19,7 @@ shapes = (
 ref = L;
 }
 );
-width = 540;
+width = 580;
 },
 {
 layerId = m006;

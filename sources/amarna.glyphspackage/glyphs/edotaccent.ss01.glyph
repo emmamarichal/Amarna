@@ -1,0 +1,85 @@
+{
+glyphname = edotaccent.ss01;
+kernLeft = o;
+kernRight = c;
+layers = (
+{
+layerId = m002;
+shapes = (
+{
+ref = e.ss01;
+},
+{
+pos = (148,-10);
+ref = dotaccentcomb;
+}
+);
+width = 474;
+},
+{
+layerId = m003;
+shapes = (
+{
+ref = e.ss01;
+},
+{
+pos = (160,0);
+ref = dotaccentcomb;
+}
+);
+width = 452;
+},
+{
+layerId = m006;
+shapes = (
+{
+ref = e.ss01;
+},
+{
+pos = (148,-10);
+ref = dotaccentcomb;
+}
+);
+width = 471;
+},
+{
+layerId = m007;
+shapes = (
+{
+ref = e.ss01;
+},
+{
+pos = (130,-10);
+ref = dotaccentcomb;
+}
+);
+width = 432;
+},
+{
+layerId = m008;
+shapes = (
+{
+ref = e.ss01;
+},
+{
+pos = (148,-10);
+ref = dotaccentcomb;
+}
+);
+width = 474;
+},
+{
+layerId = m009;
+shapes = (
+{
+ref = e.ss01;
+},
+{
+pos = (163,-10);
+ref = dotaccentcomb;
+}
+);
+width = 474;
+}
+);
+}

@@ -1,5 +1,7 @@
 {
 glyphname = scaron;
+kernLeft = s;
+kernRight = s;
 layers = (
 {
 layerId = m002;
@@ -21,11 +23,11 @@ shapes = (
 ref = s;
 },
 {
-pos = (15,0);
+pos = (18,0);
 ref = caroncomb;
 }
 );
-width = 409;
+width = 441;
 },
 {
 layerId = m006;

@@ -1,5 +1,7 @@
 {
 glyphname = quoteleft;
+kernLeft = quoteleft;
+kernRight = quoteleft;
 layers = (
 {
 layerId = m002;
@@ -10,7 +12,7 @@ pos = (230,599);
 ref = quotesinglbase;
 }
 );
-width = 230;
+width = 200;
 },
 {
 layerId = m003;
@@ -32,7 +34,7 @@ pos = (230,599);
 ref = quotesinglbase;
 }
 );
-width = 210;
+width = 180;
 },
 {
 layerId = m007;
@@ -54,7 +56,7 @@ pos = (230,599);
 ref = quotesinglbase;
 }
 );
-width = 230;
+width = 200;
 },
 {
 layerId = m009;

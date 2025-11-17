@@ -1,5 +1,7 @@
 {
 glyphname = uacute;
+kernLeft = u;
+kernRight = i;
 layers = (
 {
 layerId = m002;
@@ -21,11 +23,11 @@ shapes = (
 ref = u;
 },
 {
-pos = (155,-10);
+pos = (165,-10);
 ref = acutecomb;
 }
 );
-width = 530;
+width = 550;
 },
 {
 layerId = m006;

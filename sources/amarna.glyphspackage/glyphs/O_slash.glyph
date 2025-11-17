@@ -1,5 +1,7 @@
 {
 glyphname = Oslash;
+kernLeft = O;
+kernRight = O;
 layers = (
 {
 layerId = m002;
@@ -17,7 +19,7 @@ nodes = (
 );
 }
 );
-width = 795;
+width = 805;
 },
 {
 layerId = m003;
@@ -28,14 +30,14 @@ ref = O;
 {
 closed = 1;
 nodes = (
-(47,25,l),
-(92,-15,l),
-(748,675,l),
-(703,715,l)
+(67,25,l),
+(112,-15,l),
+(768,675,l),
+(723,715,l)
 );
 }
 );
-width = 795;
+width = 835;
 },
 {
 layerId = m006;
@@ -89,7 +91,7 @@ nodes = (
 );
 }
 );
-width = 795;
+width = 805;
 },
 {
 layerId = m009;

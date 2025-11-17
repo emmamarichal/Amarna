@@ -1,5 +1,7 @@
 {
 glyphname = Atilde;
+kernLeft = A;
+kernRight = A;
 layers = (
 {
 layerId = m002;
@@ -21,11 +23,11 @@ shapes = (
 ref = A;
 },
 {
-pos = (125,200);
+pos = (145,200);
 ref = tildecomb;
 }
 );
-width = 626;
+width = 666;
 },
 {
 layerId = m006;

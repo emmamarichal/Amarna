@@ -1,5 +1,7 @@
 {
 glyphname = Ubreve;
+kernLeft = U;
+kernRight = U;
 layers = (
 {
 layerId = m006;
@@ -47,11 +49,11 @@ shapes = (
 ref = U;
 },
 {
-pos = (167,160);
+pos = (187,160);
 ref = brevecomb;
 }
 );
-width = 697;
+width = 737;
 },
 {
 layerId = m008;

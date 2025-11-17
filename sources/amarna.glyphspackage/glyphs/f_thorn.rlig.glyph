@@ -1,5 +1,7 @@
 {
 glyphname = f_thorn.rlig;
+kernLeft = f;
+kernRight = o;
 layers = (
 {
 anchors = (
@@ -66,11 +68,11 @@ shapes = (
 ref = f.lig_ascender;
 },
 {
-pos = (325,0);
+pos = (345,0);
 ref = thorn;
 }
 );
-width = 855;
+width = 895;
 },
 {
 anchors = (
@@ -101,11 +103,11 @@ shapes = (
 ref = f.lig_ascender;
 },
 {
-pos = (283,0);
+pos = (253,0);
 ref = thorn;
 }
 );
-width = 787;
+width = 757;
 },
 {
 anchors = (

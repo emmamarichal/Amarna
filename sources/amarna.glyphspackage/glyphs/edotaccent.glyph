@@ -1,5 +1,7 @@
 {
 glyphname = edotaccent;
+kernLeft = o;
+kernRight = e;
 layers = (
 {
 layerId = m002;
@@ -21,11 +23,11 @@ shapes = (
 ref = e;
 },
 {
-pos = (141,0);
+pos = (161,0);
 ref = dotaccentcomb;
 }
 );
-width = 474;
+width = 514;
 },
 {
 layerId = m006;
@@ -73,11 +75,11 @@ shapes = (
 ref = e;
 },
 {
-pos = (152,0);
+pos = (147,0);
 ref = dotaccentcomb;
 }
 );
-width = 514;
+width = 499;
 }
 );
 unicode = 279;

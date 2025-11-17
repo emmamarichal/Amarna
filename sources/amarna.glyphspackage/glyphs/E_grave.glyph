@@ -1,5 +1,7 @@
 {
 glyphname = Egrave;
+kernLeft = I;
+kernRight = E;
 layers = (
 {
 layerId = m002;
@@ -21,11 +23,11 @@ shapes = (
 ref = E;
 },
 {
-pos = (98,200);
+pos = (118,200);
 ref = gravecomb;
 }
 );
-width = 560;
+width = 600;
 },
 {
 layerId = m006;
@@ -38,7 +40,7 @@ pos = (90,200);
 ref = gravecomb;
 }
 );
-width = 560;
+width = 570;
 },
 {
 layerId = m007;

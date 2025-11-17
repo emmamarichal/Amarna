@@ -1,21 +1,10 @@
 {
 glyphname = abreve;
+kernLeft = a;
+kernRight = n;
 layers = (
 {
 layerId = m002;
-shapes = (
-{
-ref = a;
-},
-{
-pos = (52,0);
-ref = brevecomb;
-}
-);
-width = 513;
-},
-{
-layerId = m003;
 shapes = (
 {
 ref = a;
@@ -25,7 +14,20 @@ pos = (42,0);
 ref = brevecomb;
 }
 );
-width = 483;
+width = 503;
+},
+{
+layerId = m003;
+shapes = (
+{
+ref = a;
+},
+{
+pos = (52,0);
+ref = brevecomb;
+}
+);
+width = 503;
 },
 {
 layerId = m006;

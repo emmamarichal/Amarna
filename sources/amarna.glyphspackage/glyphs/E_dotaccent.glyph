@@ -1,5 +1,7 @@
 {
 glyphname = Edotaccent;
+kernLeft = I;
+kernRight = E;
 layers = (
 {
 layerId = m002;
@@ -21,11 +23,11 @@ shapes = (
 ref = E;
 },
 {
-pos = (202,200);
+pos = (222,200);
 ref = dotaccentcomb;
 }
 );
-width = 560;
+width = 600;
 },
 {
 layerId = m006;
@@ -38,7 +40,7 @@ pos = (195,200);
 ref = dotaccentcomb;
 }
 );
-width = 560;
+width = 570;
 },
 {
 layerId = m007;

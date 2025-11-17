@@ -1,0 +1,85 @@
+{
+glyphname = Utilde.ss02;
+kernLeft = U;
+kernRight = I;
+layers = (
+{
+layerId = m006;
+shapes = (
+{
+ref = U.ss02;
+},
+{
+pos = (124,150);
+ref = tildecomb;
+}
+);
+width = 699;
+},
+{
+layerId = m007;
+shapes = (
+{
+ref = U.ss02;
+},
+{
+pos = (153,150);
+ref = tildecomb;
+}
+);
+width = 698;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = U.ss02;
+},
+{
+pos = (141,150);
+ref = tildecomb;
+}
+);
+width = 734;
+},
+{
+layerId = m003;
+shapes = (
+{
+ref = U.ss02;
+},
+{
+pos = (162,150);
+ref = tildecomb;
+}
+);
+width = 739;
+},
+{
+layerId = m008;
+shapes = (
+{
+ref = U.ss02;
+},
+{
+pos = (149,150);
+ref = tildecomb;
+}
+);
+width = 750;
+},
+{
+layerId = m009;
+shapes = (
+{
+ref = U.ss02;
+},
+{
+pos = (167,150);
+ref = tildecomb;
+}
+);
+width = 750;
+}
+);
+}

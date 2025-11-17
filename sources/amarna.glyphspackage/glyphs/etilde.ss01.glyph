@@ -1,0 +1,85 @@
+{
+glyphname = etilde.ss01;
+kernLeft = o;
+kernRight = c;
+layers = (
+{
+layerId = m006;
+shapes = (
+{
+ref = e.ss01;
+},
+{
+pos = (37,-10);
+ref = tildecomb;
+}
+);
+width = 471;
+},
+{
+layerId = m007;
+shapes = (
+{
+ref = e.ss01;
+},
+{
+pos = (19,-10);
+ref = tildecomb;
+}
+);
+width = 432;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = e.ss01;
+},
+{
+pos = (37,-10);
+ref = tildecomb;
+}
+);
+width = 474;
+},
+{
+layerId = m003;
+shapes = (
+{
+ref = e.ss01;
+},
+{
+pos = (50,0);
+ref = tildecomb;
+}
+);
+width = 452;
+},
+{
+layerId = m008;
+shapes = (
+{
+ref = e.ss01;
+},
+{
+pos = (37,-10);
+ref = tildecomb;
+}
+);
+width = 474;
+},
+{
+layerId = m009;
+shapes = (
+{
+ref = e.ss01;
+},
+{
+pos = (52,-10);
+ref = tildecomb;
+}
+);
+width = 474;
+}
+);
+}

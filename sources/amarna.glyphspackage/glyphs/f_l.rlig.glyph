@@ -1,5 +1,7 @@
 {
 glyphname = f_l.rlig;
+kernLeft = f;
+kernRight = l;
 layers = (
 {
 anchors = (
@@ -66,11 +68,11 @@ shapes = (
 ref = f.lig_ascender;
 },
 {
-pos = (325,0);
+pos = (345,0);
 ref = l;
 }
 );
-width = 550;
+width = 590;
 },
 {
 anchors = (
@@ -101,11 +103,11 @@ shapes = (
 ref = f.lig_ascender;
 },
 {
-pos = (283,0);
+pos = (253,0);
 ref = l;
 }
 );
-width = 491;
+width = 461;
 },
 {
 anchors = (

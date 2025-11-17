@@ -1,5 +1,7 @@
 {
 glyphname = Jacute;
+kernLeft = J;
+kernRight = J;
 layers = (
 {
 layerId = m006;
@@ -12,7 +14,7 @@ pos = (135,200);
 ref = acutecomb;
 }
 );
-width = 330;
+width = 324;
 },
 {
 layerId = m007;
@@ -47,11 +49,11 @@ shapes = (
 ref = J;
 },
 {
-pos = (138,200);
+pos = (158,200);
 ref = acutecomb;
 }
 );
-width = 330;
+width = 370;
 },
 {
 layerId = m008;

@@ -1,5 +1,7 @@
 {
 glyphname = semicolon;
+kernLeft = period;
+kernRight = period;
 layers = (
 {
 layerId = m002;

@@ -1,5 +1,7 @@
 {
 glyphname = Dcroat;
+kernLeft = croat;
+kernRight = O;
 layers = (
 {
 layerId = m002;
@@ -17,7 +19,7 @@ shapes = (
 ref = Eth;
 }
 );
-width = 769;
+width = 809;
 },
 {
 layerId = m006;

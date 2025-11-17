@@ -1,5 +1,7 @@
 {
 glyphname = Cacute;
+kernLeft = O;
+kernRight = C;
 layers = (
 {
 layerId = m002;
@@ -21,11 +23,11 @@ shapes = (
 ref = C;
 },
 {
-pos = (325,200);
+pos = (345,200);
 ref = acutecomb;
 }
 );
-width = 683;
+width = 703;
 },
 {
 layerId = m006;

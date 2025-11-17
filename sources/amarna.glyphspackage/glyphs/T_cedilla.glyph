@@ -1,5 +1,7 @@
 {
 glyphname = Tcedilla;
+kernLeft = T;
+kernRight = T;
 layers = (
 {
 layerId = m006;
@@ -47,11 +49,11 @@ shapes = (
 ref = T;
 },
 {
-pos = (55,0);
+pos = (75,0);
 ref = cedillacomb;
 }
 );
-width = 580;
+width = 620;
 },
 {
 layerId = m008;

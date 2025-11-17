@@ -1,5 +1,7 @@
 {
 glyphname = Ccircumflex;
+kernLeft = O;
+kernRight = C;
 layers = (
 {
 layerId = m006;
@@ -47,11 +49,11 @@ shapes = (
 ref = C;
 },
 {
-pos = (240,200);
+pos = (260,200);
 ref = circumflexcomb;
 }
 );
-width = 683;
+width = 703;
 },
 {
 layerId = m008;

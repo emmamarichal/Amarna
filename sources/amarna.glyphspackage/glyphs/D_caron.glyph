@@ -1,5 +1,7 @@
 {
 glyphname = Dcaron;
+kernLeft = I;
+kernRight = O;
 layers = (
 {
 layerId = m002;
@@ -21,11 +23,11 @@ shapes = (
 ref = D;
 },
 {
-pos = (141,200);
+pos = (161,200);
 ref = caroncomb;
 }
 );
-width = 732;
+width = 754;
 },
 {
 layerId = m006;

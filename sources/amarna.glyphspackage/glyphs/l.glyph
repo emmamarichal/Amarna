@@ -1,5 +1,7 @@
 {
 glyphname = l;
+kernLeft = l;
+kernRight = l;
 layers = (
 {
 anchors = (
@@ -73,19 +75,19 @@ width = 258;
 anchors = (
 {
 name = bottom;
-pos = (78,0);
+pos = (88,0);
 },
 {
 name = center;
-pos = (131,375);
+pos = (141,375);
 },
 {
 name = top;
-pos = (183,750);
+pos = (193,750);
 },
 {
 name = topright;
-pos = (245,750);
+pos = (255,750);
 }
 );
 background = {
@@ -126,16 +128,16 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(119,550,l),
-(42,0,l),
-(125,0,l),
-(155,250,l),
-(227,760,l),
-(136,740,l)
+(129,550,l),
+(52,0,l),
+(135,0,l),
+(165,250,l),
+(237,760,l),
+(146,740,l)
 );
 }
 );
-width = 225;
+width = 245;
 },
 {
 anchors = (

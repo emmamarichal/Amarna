@@ -1,5 +1,7 @@
 {
 glyphname = ucaron;
+kernLeft = u;
+kernRight = i;
 layers = (
 {
 layerId = m007;
@@ -47,11 +49,11 @@ shapes = (
 ref = u;
 },
 {
-pos = (70,-10);
+pos = (80,-10);
 ref = caroncomb;
 }
 );
-width = 530;
+width = 550;
 },
 {
 layerId = m008;

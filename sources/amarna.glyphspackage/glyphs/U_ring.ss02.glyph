@@ -1,0 +1,85 @@
+{
+glyphname = Uring.ss02;
+kernLeft = U;
+kernRight = I;
+layers = (
+{
+layerId = m002;
+shapes = (
+{
+ref = U.ss02;
+},
+{
+pos = (180,150);
+ref = ringcomb;
+}
+);
+width = 734;
+},
+{
+layerId = m003;
+shapes = (
+{
+ref = U.ss02;
+},
+{
+pos = (210,150);
+ref = ringcomb;
+}
+);
+width = 739;
+},
+{
+layerId = m006;
+shapes = (
+{
+ref = U.ss02;
+},
+{
+pos = (163,150);
+ref = ringcomb;
+}
+);
+width = 699;
+},
+{
+layerId = m007;
+shapes = (
+{
+ref = U.ss02;
+},
+{
+pos = (192,150);
+ref = ringcomb;
+}
+);
+width = 698;
+},
+{
+layerId = m008;
+shapes = (
+{
+ref = U.ss02;
+},
+{
+pos = (188,150);
+ref = ringcomb;
+}
+);
+width = 750;
+},
+{
+layerId = m009;
+shapes = (
+{
+ref = U.ss02;
+},
+{
+pos = (206,150);
+ref = ringcomb;
+}
+);
+width = 750;
+}
+);
+}

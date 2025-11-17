@@ -1,5 +1,7 @@
 {
 glyphname = gcommaaccent;
+kernLeft = o;
+kernRight = g;
 layers = (
 {
 layerId = m002;
@@ -21,11 +23,11 @@ shapes = (
 ref = g;
 },
 {
-pos = (164,0);
+pos = (174,0);
 ref = commaturnedabovecomb;
 }
 );
-width = 513;
+width = 533;
 },
 {
 layerId = m006;

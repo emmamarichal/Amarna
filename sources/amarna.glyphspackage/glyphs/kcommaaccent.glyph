@@ -1,5 +1,7 @@
 {
 glyphname = kcommaaccent;
+kernLeft = l;
+kernRight = k;
 layers = (
 {
 layerId = m002;
@@ -21,11 +23,11 @@ shapes = (
 ref = k;
 },
 {
-pos = (152,10);
+pos = (162,10);
 ref = commaaccentcomb;
 }
 );
-width = 480;
+width = 500;
 },
 {
 layerId = m006;

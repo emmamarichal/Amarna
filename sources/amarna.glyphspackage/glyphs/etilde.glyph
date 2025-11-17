@@ -1,5 +1,7 @@
 {
 glyphname = etilde;
+kernLeft = o;
+kernRight = e;
 layers = (
 {
 layerId = m006;
@@ -47,11 +49,11 @@ shapes = (
 ref = e;
 },
 {
-pos = (31,0);
+pos = (51,0);
 ref = tildecomb;
 }
 );
-width = 474;
+width = 514;
 },
 {
 layerId = m008;
@@ -73,11 +75,11 @@ shapes = (
 ref = e;
 },
 {
-pos = (41,0);
+pos = (36,0);
 ref = tildecomb;
 }
 );
-width = 514;
+width = 499;
 }
 );
 unicode = 7869;

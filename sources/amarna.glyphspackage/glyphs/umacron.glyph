@@ -1,5 +1,7 @@
 {
 glyphname = umacron;
+kernLeft = u;
+kernRight = i;
 layers = (
 {
 layerId = m002;
@@ -21,11 +23,11 @@ shapes = (
 ref = u;
 },
 {
-pos = (50,-10);
+pos = (60,-10);
 ref = macroncomb;
 }
 );
-width = 530;
+width = 550;
 },
 {
 layerId = m006;

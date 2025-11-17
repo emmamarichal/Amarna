@@ -1,5 +1,7 @@
 {
 glyphname = udieresis;
+kernLeft = u;
+kernRight = i;
 layers = (
 {
 layerId = m002;
@@ -21,11 +23,11 @@ shapes = (
 ref = u;
 },
 {
-pos = (61,-10);
+pos = (71,-10);
 ref = dieresiscomb;
 }
 );
-width = 530;
+width = 550;
 },
 {
 layerId = m006;
@@ -73,7 +75,7 @@ shapes = (
 ref = u;
 },
 {
-pos = (97,-20);
+pos = (76,-20);
 ref = dieresiscomb;
 }
 );

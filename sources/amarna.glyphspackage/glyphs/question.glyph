@@ -1,5 +1,6 @@
 {
 glyphname = question;
+kernRight = P;
 layers = (
 {
 background = {
