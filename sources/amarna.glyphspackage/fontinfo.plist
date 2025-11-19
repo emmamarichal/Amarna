@@ -1,5 +1,5 @@
 {
-.appVersion = "3434";
+.appVersion = "3428";
 .formatVersion = 3;
 axes = (
 {
@@ -1843,6 +1843,15 @@ name = "Visual Descender";
 );
 properties = (
 {
+key = copyrights;
+values = (
+{
+language = dflt;
+value = "Copyright 2025 The Amarna Project Authors (https://github.com/ijvanl/Amarna)";
+}
+);
+},
+{
 key = designers;
 values = (
 {
@@ -1854,6 +1863,19 @@ value = "Ishtar van Looy";
 {
 key = designerURL;
 value = "https://ishtar.page/";
+},
+{
+key = licenses;
+values = (
+{
+language = dflt;
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org";
+}
+);
+},
+{
+key = licenseURL;
+value = "https://openfontlicense.org";
 }
 );
 settings = {
