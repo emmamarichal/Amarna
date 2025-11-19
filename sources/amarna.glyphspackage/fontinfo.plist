@@ -223,7 +223,7 @@ over = -20;
 pos = -300;
 }
 );
-name = Hairline;
+name = Thin;
 stemValues = (
 35,
 25,
@@ -280,7 +280,7 @@ over = -20;
 pos = -300;
 }
 );
-name = "Hairline Italic";
+name = "Thin Italic";
 stemValues = (
 80,
 60,
